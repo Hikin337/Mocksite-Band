@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+html, body{
+margin: 0;
+padding: 0;
+background-color: black;
+height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.nav ul {
+    margin: 0;
+}
+.nav li{
+    display: inline;
+    
+}
+.nav a{
+    display: inline-block;
+    padding: 0.9em;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: darkslategrey;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.main-header{
+    background-image: url("images/yoru.png");
+    background-size: cover;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color: white;
+}
+.band-name-larger{
+    font-size: 7em;
+}
+.band-name-smaller{
+    font-size: 2em;
+}
+.content-section{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header{
+    text-align: center;
+    font-family: "Metal Mania";
+    font-weight: normal; 
+    color: lightgrey;
+    font-size: 2.5em;
+    margin: 0;
+}
+section p{
+    color: #fff;
+}
+.section-font-grey{
+    color: #777;
+}
+.about-band-image{
+    float: left;
+    border: solid 3px darkslategrey;
+    width: 300px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 15px;
+}
+.border-container{
+    background-color: rgb(19, 18, 18);
+    padding: 0.5em;
+}
+.border-container-header{
+    margin-bottom: 3em;
+    background-color: darkslategrey;
+}
+.border-container-footer{
+    margin-top: auto;
+}
+.border-separator{
+    padding: 0.5em;
+}
+.border-separator-larger{
+    padding: 3.5em;
+}
+.main-footer{
+    background-color: darkslategrey;
+    color: white;
+    padding: .25em 0;
+    flex-shrink: 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .37em;
+}
+
+.btn-header{
+    float: left;
+    position: relative;
+    color: white;
+    border: 2px solid #829947;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+
+}
+
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.tour-row{
+    border-bottom: 1px solid wheat;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-of-type{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: 1em;
+    
+}
+.tour-date{
+    color: #555;
+    font-weight: bold;
+}
+
+.tour-city{
+}
+
+.tour-arena{
+}
+
+.tour-btn{
+}
+
+.btn-primary{
+    color: white;
+    background-color: darkslategrey;
+}
+
+.btn-primary:hover{
+    background-color: darkolivegreen;
+}
+
+.shop-item{
+    margin: 30px;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: olivedrab;
+    margin-bottom: 15px;
+
+}
+
+.shop-item-img{
+    height: 250px;
+}
+.shop-item-img-smaller{
+    width: 80px;
+    height: auto;
+}
+.shop-item-img-rounded{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex-grow: 1;
+    color: white;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-items-merch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: olivedrab;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid wheat;
+    margin-right: 1.5em; 
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
+}
+
+.cart-item {
+width: 45%;
+color: white;
+}
+
+.cart-price{
+    width: 20%;
+    color: white;
+    font-size: 1.2em;
+}
+.cart-quantity{
+    width:35%;
+    color: white;
+}
+
+.cart-item-title{
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.btn-danger{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.cart-quantity-input{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    background-color: #eee;
+    color: #333;
+    padding:  0;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid white;
+}
+
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price{
+    font-size: 1.2em;
+    color: orange;
+    font-weight: lighter;
+}
+
+.btn-purchase{
+    display: block;
+    margin: 40px auto 20px auto;
+    font-size: 1.65em;
+    border-radius: 10px;
+}
+
+.cart-quantity-btn:hover{
+    background-color: darkred;
+}
